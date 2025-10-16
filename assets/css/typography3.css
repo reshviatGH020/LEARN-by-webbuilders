@@ -1,0 +1,371 @@
+/* 
+=========================
+Typography
+=========================
+*/
+/* google fonts   */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* 
+font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+h2 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #000000;
+}
+h3 {
+    font-size: 30px;
+    line-height: 40px;
+}
+h4 {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin: 0;
+}
+
+p img {
+    margin: 0;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* em and strong */
+
+em {
+    font: 15px/30px;
+}
+
+strong,
+b {
+    font: 15px/30px;
+}
+small {
+    font-size: 11px;
+    line-height: inherit;
+}
+/*  blockquotes */
+blockquote {
+    border-left: 0 none;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+    padding-left: 40px;
+    position: relative;
+}
+blockquote::before {
+    color: #4e5665;
+    content: "";
+    font-family: FontAwesome;
+    font-size: 36px;
+    left: 20px;
+    line-height: 0;
+    margin: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 20px;
+}
+blockquote p {
+    font-style: italic;
+    padding: 0;
+    font-size: 18px;
+    line-height: 36px;
+}
+blockquote cite {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+blockquote cite:before {
+    content: "\2014 \0020";
+}
+blockquote cite a,
+blockquote cite a:visited {
+    color: #8B9798;
+    border: none
+}
+/* abbreviations */
+abbr {
+    color: #444;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: .6px;
+}
+abbr:hover {
+    cursor: help;
+}
+/* links */
+a,
+a:visited {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #111;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    outline: 0;
+    -ms-transition: all 0.3s ease;
+}
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+p a,
+p a:visited {
+    line-height: inherit;
+    outline: 0;
+}
+/* list */
+ul,
+ol {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+ol {
+    list-style: decimal;
+}
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+    margin-left: 0px;
+}
+ul.square {
+    list-style: square outside;
+}
+ul.circle {
+    list-style: circle outside;
+}
+ul.disc {
+    list-style: disc outside;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 0;
+}
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+    margin-bottom: 0px;
+}
+li {
+    line-height: 18px;
+    margin-bottom: 0px;
+}
+
+dl {
+    margin: 12px 0;
+}
+
+dt {
+    margin: 0;
+    color: #11ABB0;
+}
+
+dd {
+    margin: 0 0 0 20px;
+}
+
+/*
+-----------------------------------------------------------------------
+- Custom Typography
+-----------------------------------------------------------------------
+*/
+.row>* {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media screen and (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    /* .container-width{
+        max-width: 1524px;
+    } */
+}
+@media screen and (max-width: 1199px) {
+    .container {
+      max-width: 100%;
+    }
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: var(--fontMain);
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+i{
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+p{
+    color: var(--fontMain);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--headingColor5);
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 64px;
+}
+h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 67px;
+}
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+}
+h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+}
+input{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+input:focus,
+button:focus {
+    outline: none;
+}
+/* color code */
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --primaryFont: #28450B;
+    --fontMain: #5D605A;
+    --buttonBg: #FFA621;
+    --bgMain: #EDF6EE;
+    --bg: #E5E5E5;
+    --gradientBlog: linear-gradient(0deg, rgba(22, 45, 0, 0.8) 23.66%, rgba(12, 10, 46, 0) 100%);
+    /* home 5 color code  */
+    --mainColor5: #8438FF;
+    --mainColorHover5: rgba(132, 56, 255, 0.7);
+    --headingColor5: #0C0852;
+    --headingColorHover5: #4A4CC7;
+    --paraColor5: #504F62;
+    --cardHover5: #F3F3F3;
+}
+
+/*################## 
+--------------------------
+- typography area ends here
+--------------------------
+##################*/
